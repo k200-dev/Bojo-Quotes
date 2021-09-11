@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Bojo Quotes - Example</title>
+	<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+	<section class="hero is-medium is-link">
+		<div class="hero-body">
+			<p class="title has-text-centered">Bojo Quotes - Example</p><br>
+			<p class="subtitle has-text-centered">Bojo Quotes is an open source RESTful API for quotes by Boris Johnson. Written with the bulma CSS framework and express web framework in Typescript.<br>
+			<br>
+			<strong>Source code available on <a href="https://github.com/k200-dev/bojo-quotes">github</a></strong></p>
+		</div>
+	</section>
+	<div class="tabs is-centered">
+		<ul>
+			<li class="is-active">
+				<a>Example</a>
+			</li>
+			<li>
+				<a href="./docs.html">Documentation</a>
+			</li>
+		</ul>
+	</div>
+	<div class='container has-text-centered'>
+		<div class='columns is-mobile is-centered'>
+			<div class='column is-5'>
+				<div class='box'>
+					<h1 class='title' style='color:#485fc3'>API Example - Random quote</h1>
+					<p class='is-family-monospace' id="apiText">Click the button below to get a random bojo quote</p><br>
+					<div class='buttons'>
+						<button class='button is-fullwidth is-family-monospace' onclick="randQuote()">Get a random quote</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/main.js">
+	</script>
+</body>
+</html>
