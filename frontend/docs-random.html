@@ -5,6 +5,12 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>Bojo Quotes - Documentation</title>
 	<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js">
+	</script>
+	<script>
+	hljs.highlightAll();
+	</script>
 	<meta content="Bojo Quotes" property="og:title">
 	<meta content="Open source RESTful API for quotes by Boris Johnson. Written with the bulma CSS framework and express web framework in Typescript." property="og:description">
 	<meta content="https://bojo-quotes.xyz" property="og:url">
@@ -45,17 +51,17 @@
 				</div>
 				<div class="block">
 					Returns a random quote in JSON format
-				</div>
-				<pre>
-<code>
+					<pre>
+<code class='language-json'>
 {
   "quote": "quote text goes here",
   "subject": "subject goes here"
 }
 </code>
 </pre>
-				<div></div>
+				</div>
 			</div>
+			<div></div>
 		</div>
 	</div>
 </body>
