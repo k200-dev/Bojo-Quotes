@@ -6,9 +6,9 @@ An open source API for Boris Johnson quotes hosted at [bojo-quotes.xyz](https://
 
 ### Built With
 
-* [TypeScript](https://www.typescriptlang.org/)
+* [Rust](https://rust-lang.org/)
 * [Bulma CSS](https://bulma.io/)
-* [Express](https://expressjs.com/)
+* [Rocket](https://rocket.rs/)
 
 
 [stars-shield]: https://img.shields.io/github/stars/k200-dev/bojo-quotes.svg?style=for-the-badge
