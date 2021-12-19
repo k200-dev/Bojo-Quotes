@@ -1,10 +1,12 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use] extern crate rocket;
-#[macro_use] extern crate serde_derive;
+#[macro_use]
+extern crate rocket;
+#[macro_use]
+extern crate serde_derive;
 
-use rocket_cors::{AllowedHeaders};
 use rocket::http::Method;
+use rocket_cors::AllowedHeaders;
 
 mod endpoints {
     pub mod random;
@@ -16,14 +18,12 @@ fn main() {
         allowed_headers: AllowedHeaders::some(&["Authorization", "Accept"]),
         allow_credentials: true,
         ..Default::default()
-      }
-      .to_cors()
-      .expect("Error creating cors");
+    }
+    .to_cors()
+    .expect("Error creating cors");
 
     rocket::ignite()
-    .mount("/random", routes![endpoints::random::random])
-    .attach(cors)
-    .launch();
+        .mount("/random", routes![endpoints::random::random])
+        .attach(cors)
+        .launch();
 }
-
-
