@@ -13,7 +13,7 @@ pub struct Quote {
 
 #[get("/")]
 pub fn random() -> Json<Quote> {
-    let f = File::open("../quotes.txt")
+    let f = File::open("quotes.txt")
     .expect("Could not read file");
     let f  = BufReader::new(f);
     let lines = f.lines().map(|l| l.expect("Couldn't read line"));
