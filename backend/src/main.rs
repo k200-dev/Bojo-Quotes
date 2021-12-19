@@ -9,7 +9,6 @@ use rocket::http::Method;
 mod endpoints {
     pub mod random;
 }
-pub mod get_quote;
 
 fn main() {
     let cors = rocket_cors::CorsOptions {
