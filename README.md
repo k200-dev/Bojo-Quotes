@@ -2,11 +2,12 @@
 
 ## About
 
-An open source API for Boris Johnson quotes hosted at [bojo-quotes.xyz](https://bojo-quotes.xyz)
+An API for quotes by Boris Johnson hosted at [bojo-quotes.xyz](https://bojo-quotes.xyz)
+
+99% Satire
 
 ### Built With
 
-* [Rust](https://rust-lang.org/)
 * [Bulma CSS](https://bulma.io/)
 * [Rocket](https://rocket.rs/)
 
